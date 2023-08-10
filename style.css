@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow&family=Lato:ital,wght@1,900&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,400&display=swap');
+
+:root {
+    --large-default-padding: 6.5em;
+    --medium-default-padding: 4em;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    color: black;
+    background-color:whitesmoke;
+}
+ul li a{
+    text-decoration: none;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    width: 100%;
+    background: whitesmoke;
+    transition: all 0.5s;
+    position: fixed; /*manter a barra fixa */
+}
+.navigation .logo{
+    color: #000080;
+    font-size: 1.7rem;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.navigation ul li a{
+    color: blue;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+.navigation ul li a:hover{
+    color: #00BFB2;
+    
+}
+.menu{
+    cursor: pointer;
+}
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: blue;
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+.home{
+    background:white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+.home_text{
+    max-width: 37rem;
+}
+.home .home_text-h5{
+    font-size: 1.6rem;
+    color: grey;
+    margin-bottom: 1rem;
+}
+.home .home_text h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+}
+.home .home_text p{
+    margin-bottom: 4rem;
+}
+.home_btn{
+    padding: 16px 30px;
+    background-color: #ccc;
+    border-radius: 15px;
+    text-decoration: none;
+    color: blue;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+.home_btn:hover{
+    color: #00BFB2;
+}
+
+div a:hover{
+    cursor: pointer;
+}
+.home_img{
+    width: 500px;
+}
+
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 1rem;
+}
+
+/*segunda parte começa aqui*/
+.about{
+    padding: var(--medium-default-padding) var(--large-default-padding);
+    text-align: center;
+}
+.about .titulo2{
+    font-size: 3rem;
+}
+.about p{
+    line-height: 2;
+    text-align: justify;
+}
+/*finalizado 2segunda parte*/
+.subtitulo_03 h2{
+    text-align: center;
+    font-size: 3rem;
+}
+.galeria{
+    padding: 0 var(--large-default-padding) var(--medium-default-padding);
+    color: #778899;
+    display: flex;
+    gap: 10px;
+    justify-content:center;
+    margin-top:25px;
+}
+.ftp01, .ftp02, .ftp03{
+    border: 3px solid black;
+}
+.pg01, .pg02, .pg03{
+    text-align: center;
+}
+.texto-video{
+    text-align: center;
+    text-transform: capitalize;
+}
+.video{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.galeria-02{
+    display: flex;
+    justify-content: center;
+}
+.section_2{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+}
+.conteudo{
+    margin-top: 30px;
+    
+}
+.texto-intervencao{
+    text-align: center;
+}
+.clinical{
+    margin-top: 30px;
+ 
+}
+.text_li{
+    text-align: center;
+    line-height: 3em;
+}
+/*quarta parte da pagina  ainda tem de arrumar esta secao*/
+.galeria-03{
+    text-align: center;
+    font-size: 3rem;
+    background-color: white;
+}
+.text_ods3{
+    padding: 30px;
+    font-size: 3rem;
+    text-align: center;
+}
+.figura_ilustrativa{
+    font-size: 15px;
+    margin-bottom: 1px;
+}
+.fotografiaods{
+    margin-bottom: 20px;
+}
+.galeria-04{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color:#C0C0C0;
+    overflow: hidden;
+}
+.galeria-04 > div {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.galeria-04 > div .fotox01{
+    width: 150px;
+    border-radius: 60px;
+}
+.galeria-04 > div p{
+    max-width: 600px;
+    color: white;
+    text-align: justify;
+}
+.galeria-04 > div strong{
+    color: #000080;
+}
+.galeria-04 .nome{
+    color: white;
+    padding: 20px;
+}
+
+/*aqui termina secão sobre*/
+
+/*aqui começa o footer*/
+
+footer{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+footer > div {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.curso{
+    color: #000080;
+}
+.curso .ass01, .ass02, .ass3, .ass4, .ass5{
+    color: #000080;
+    text-decoration: none;
+    font-weight: 400;
+    padding-top: 10px;
+    align-items: center;
+}
+.curso a:hover{
+    color: #778899;
+}
+.contato{
+    color: #808080;
+}
+
+@media screen and all (max-width:760px) {
+    .navigation{
+        padding: 18px 20px;
+    }
+    .menu{
+        display: block;
+    }
+    /*
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: white;
+        gap: -10px;
+        transition: 0.3s;
+    }
+}

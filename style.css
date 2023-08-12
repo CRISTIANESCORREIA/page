@@ -268,14 +268,73 @@ footer > div {
 .contato{
     color: #808080;
 }
+@media screen and (max-width:475px) {
+    body, div, section,{
+            display: block;
+            width:100%
+            
+        }
 
-@media screen and all (max-width:760px) {
-    .navigation{
-        padding: 18px 20px;
-    }
-    .menu{
+        h1{
+            margin-top: 90px;
+            text-align: center;
+            font-size:0.8rem;
+        }
+        .logo{
+            align-items: center;
+            position: relative;
+        }
+        .home_btn{
+            margin-left: 30%;
+            align-items: center;
+        }
+        .home_img{
+            display: block;
+            font-size: small;
+        }
+        #textoODS{
+            max-width: 375px;
+            justify-content: flex-start;
+        }
+        .texto-video{
         display: block;
-    }
+        }
+        .video02{
+            max-width: 375px;
+        }
+        .galeria{
+            align-items: center;
+            display: block;
+        }
+        .ftp01, .ftp02, .ftp03{
+            margin-left: 0px;
+            max-width: 250px;
+            align-items: center;
+        }
+        .galeria-02{
+            display: block;
+        }
+        .conteudo{
+            padding: 0;
+            display: block;
+        }
+        .galeria-04{
+            font-size: 0.7rem;
+            text-align: center;
+        }
+        .clinical{
+            display: block;
+        }
+        .fotografiaods{
+            max-width: 375px;
+        }
+        .section_2{
+            display: block;
+        }
+  
+}
+
+ 
     /*
     .nav-menu{
         position: fixed;
